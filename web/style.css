@@ -1,0 +1,28 @@
+body{
+    background-color: powderblue;
+}
+
+.terminal {
+    --color: black;
+    --background: #f5f0d7;
+    --size: 1.6;
+    --link-color: black;
+    font-family: 'Fira Mono', monospace;
+}
+
+
+.terminal, .terminal .terminal-fill {
+    padding: 1.2em;
+}
+
+
+
+#terminal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%; !important;
+}​
+
+
