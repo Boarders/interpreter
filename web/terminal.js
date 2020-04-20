@@ -1,15 +1,16 @@
-var greet = "Terminal";
+var topLevel = require('./toplevel.js');
+var greet = "Terminal\n";
 
 function interpret(line){
     var trimLine = line.trim();
-    return trimLine;
+    return topLevel.runExpr(trimLine);
+
 }
     
 
-$('#terminal').terminal(interpret, {
+$('body').terminal(interpret, {
     greetings: greet,
     name: "terminal",
-    height: 550,
     prompt: 'λ ',
 });
 
